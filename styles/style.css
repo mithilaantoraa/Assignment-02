@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shared css styles */
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.noto-serif {
+  font-family: "Noto Serif", serif;
+}
+
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+.section-title{
+   color: rgba(0, 0, 0, 1);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+
+}
+.span-orange{
+     color: rgba(233, 90, 8, 1);
+     font-size: 4rem;
+    font-weight: bold;
+
+}
+.section-text{
+     color: rgba(0, 0, 0, 0.5);
+    font-size:1.25rem ;
+}
+.btn{
+    background: rgba(233, 90, 8, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 19px 80px;
+    font-weight: 500;
+    border: none;
+}
+/* navbar styles*/
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.nav-menu-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+}
+.nav-menu-links a {
+    text-decoration: none;
+
+}
+.home{
+    color: rgba(37, 36, 50, 1);
+}
+.shop,.about-us{
+    color: rgba(137, 135, 161, 1);
+}
+.cart{
+    color:rgba(0, 0, 0, 1)
+}
+/* banner-styles */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+.banner-left{
+    align-content:end;
+     flex: 1;
+}
+.banner-right {
+    flex: 1;
+}
+
+.banner-right img{
+  width: 100%;
+  
+}
+
+.banner-text{
+    color: rgba(0, 0, 0, 0.5);
+    font-size:1.25rem ;
+    max-width: 80%;
+}
+/* our plants styles*/
+.plants{
+    margin:100px auto;
+    text-align: center;
+    padding: 20px 220px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* responsive media query */
+@media screen and (max-width: 576px) {
+    
+    .nav-menu-links  .home,.shop,.about-us {
+    display:none;
+
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+
+    }
+    .banner-left{
+        margin: 20px;
+    }
+    .section-title{
+   color: rgba(0, 0, 0, 1);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+
+}
+.span-orange{
+     color: rgba(233, 90, 8, 1);
+     font-size: 2rem;
+    font-weight: bold;
+
+}
+.banner-text{
+    color: rgba(0, 0, 0, 0.5);
+    font-size:1.25rem ;
+    max-width: 100%;
+    
+  
+}
+.plants{
+     margin:50px auto;
+    padding: 0px;
+}
+}
