@@ -155,12 +155,12 @@
     right: -100px;
 }
 .plant-text{
-    padding: 50px 50px 0px 50px;
+    padding: 50px;
     flex: 1;
 }
 .plant-title{
     font-weight:700;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:rgba(0, 0, 0, 1);
 }
 .plant-description li{
@@ -189,7 +189,7 @@
 .deal-left-1{
      background-image: url(../assets/deal-bloom.png);
     background-size: cover;
-     border-radius: 10px;
+     border-radius: 22px;
      background-repeat: no-repeat;
     padding: 70px;
     text-align: center;
@@ -200,7 +200,7 @@
      background-image: url(../assets/deal-ana.png);
      background-repeat: no-repeat;
      background-size: cover;
-     border-radius: 10px;
+     border-radius: 20px;
       padding: 70px;
       text-align: center;
 }
@@ -208,10 +208,10 @@
     background-image: url(../assets/deal-zabo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 60%;
     height: auto;
-    padding: 170px;
+    padding: 165px;
     text-align: center;
 
 }
@@ -247,6 +247,13 @@
     align-items: center;
     padding: 20px;
 }
+.join-input{
+    width: 70%;
+    overflow:hidden;
+}
+.join-btn{
+        width: 30%;
+}
 .join-title{
     font-size: 3rem;
     font-weight:500;
@@ -255,15 +262,27 @@
 input{
     padding: 20px 350px 20px 20px;
     border: none;
+    
+    
 
 }
+ .sub-btn{
+     background: rgba(233, 90, 8, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 19px 80px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+
+ }
 /* footer styles */
 .footer-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:30px;
     margin: 50px auto;
-    justify-items: center;
+    justify-content: space-between;
    
 }
 .footer-logo{
@@ -285,13 +304,16 @@ input{
 
 
 
-
+.hide{
+    display: none;
+}
 
 
 /* /* responsive media query */
 @media screen and (max-width: 576px) {
-   .main, .header{
+   .main, .header ,.footer{
     margin: 0px 20px;
+    
    }
     .nav-menu-links  .home,.shop,.about-us {
     display:none;
@@ -300,15 +322,17 @@ input{
     }
     .banner-container{
         flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 0px;
-
+       
     }
-    .banner-left{
-        margin: 20px;
-    }
+    
+   
+    .sec-title{
+    margin-top:20px;
+    padding: 10px;
+    font-size: 14px;
+}
     .section-title{
-   color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 13px;
@@ -331,49 +355,101 @@ input{
      margin:50px auto;
     padding: 0px;
 }
+.plant-title{
+    
+    font-size: 1.5rem;  
+}
+.plant-text{
+    padding:20px;
+      
+    
+}
+.plant-description li{
+  font-size: 0.75rem;
+  padding: 10px;
+}
 /* card-container */
 .card-container{
      grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+     gap:10px;
 
 }
+.btn{
+    padding: 10px;
+    margin-bottom:10px ;
+   
+}
+
 .plant-container{
     flex-direction: column;
     margin: 20px auto;
+    gap:10px;
+    
 }
 .plant-img .badge{
     display:none ;
 }
+
+
 .deal-container{
+    margin-top: 50px;
     flex-direction: column;
     grid-template-columns: repeat(1,1fr);
+    gap:20px;
    
 
 }
 .deal-left{
        grid-template-columns: repeat(1,1fr);
         width: 100%;
+        gap:20px;
 
 
 }
 .deal-right{
-    width: 100%;
-     padding: auto;
+    padding:70px;
 }
 .footer-container{
     flex-direction: column;
     grid-template-columns: repeat(1,1fr);
+    align-items:center;
 }
 .footer-logo{
     max width:350px;
 }
-.join{
-    width: 100%;
-    padding: 20px;
+.email-sec{
+    margin: 0px 0px;
 }
+.join{
+   
+    padding: 70px;
 
+}
+.join-items{
+   justify-content: flex-start;
+    padding: 0px;
+}
+.join-title{
+    font-size: 1rem;
+    font-weight:500;
+    
+}
 input{
-    padding: 20px;
+    padding: 11px ;
    
 
-
 }
+
+.join-btn{
+     width: 40%;
+}
+ .sub-btn{
+  
+   padding: 10px 15px;
+    font-weight: 300;
+    font-size: 0.75rem;
+    border: none;
+    width: 40;
+ 
+ }
