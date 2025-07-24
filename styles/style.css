@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -39,7 +41,32 @@
     color: rgba(255, 255, 255, 1);
     padding: 19px 80px;
     font-weight: 500;
+    font-size: 1rem;
     border: none;
+    width: 100%;
+    
+}
+.card-text{
+    color: rgba(17, 17, 17, 1);
+    font-weight: 500;
+    padding: 15px 0px;
+   
+
+}
+.card-price{
+      color: rgba(17, 17, 17, 1);
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.card-details{
+     font-size: 1.25rem;
+     text-align: center;
+    
+}
+.sec-title{
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px 220px;
 }
 /* navbar styles*/
 .navbar-container{
@@ -93,24 +120,167 @@
     max-width: 80%;
 }
 /* our plants styles*/
-.plants{
-    margin:100px auto;
-    text-align: center;
-    padding: 20px 220px;
-}
+
 .card-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    gap:1.25rem;
+    margin-top: 50px;
+   
+}
+.card-container img{
+    width: 100%;
 }
 
+/* plant-container */
+
+.plant-container{
+    display: flex;
+    gap:25px;
+    margin-top: 200px;
+}
+.plant-img{
+    flex: 1;
+}
+.plant-img img{
+    width: 100%;
+}
+.plant-img{
+    position: relative;
+}
+.plant-img .badge{
+    width: 286px;
+    position: absolute;
+    top: -130px;
+    right: -100px;
+}
+.plant-text{
+    padding: 50px 50px 0px 50px;
+    flex: 1;
+}
+.plant-title{
+    font-weight:700;
+    font-size: 3rem;
+    color:rgba(0, 0, 0, 1);
+}
+.plant-description li{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    padding: 20px;
+}
+/*  deal styles*/
+.deal-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+}
+.deal-left{
+    width: 40%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:30px;
+ 
+   
+}
+.deal-left-1{
+     background-image: url(../assets/deal-bloom.png);
+    background-size: cover;
+     border-radius: 10px;
+     background-repeat: no-repeat;
+    padding: 70px;
+    text-align: center;
 
 
+}
+.deal-left-2{
+     background-image: url(../assets/deal-ana.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 10px;
+      padding: 70px;
+      text-align: center;
+}
+.deal-right{
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 60%;
+    height: auto;
+    padding: 170px;
+    text-align: center;
 
+}
 
+.deal-left-h3{
+    font-size: 1.25rem;
+    font-weight:500;
+    color: rgba(255, 255, 255, 1);
+}
+.deal-left-p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+}
+.deal-right-h3{
+    font-size: 2.125rem;
+    font-weight:bold;
+    color: rgba(255, 255, 255, 1);
+}
+.deal-right-p{
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 1);
+}
+/* join section */
+.join{
+    background-image: url(../assets/news-letter-bg.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+     padding: 150px 300px;
 
+}
+.join-items{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.join-title{
+    font-size: 3rem;
+    font-weight:500;
+    color: rgba(255, 255, 255, 1);
+}
+input{
+    padding: 20px 350px 20px 20px;
+    border: none;
 
+}
+/* footer styles */
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+    margin: 50px auto;
+    justify-items: center;
+   
+}
+.footer-logo{
+     color: rgba(107, 114, 128, 1);
 
+}
+.footer-menu-links li{
+    list-style: none;
+   padding-top:16px;
+}
+.footer-menu-links li a{
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+}
+.footer-icon a{
+    padding:0px 10px;
+}
 
 
 
@@ -120,9 +290,12 @@
 
 /* /* responsive media query */
 @media screen and (max-width: 576px) {
-    
+   .main, .header{
+    margin: 0px 20px;
+   }
     .nav-menu-links  .home,.shop,.about-us {
     display:none;
+   
 
     }
     .banner-container{
@@ -158,4 +331,49 @@
      margin:50px auto;
     padding: 0px;
 }
+/* card-container */
+.card-container{
+     grid-template-columns: repeat(2, 1fr);
+
+}
+.plant-container{
+    flex-direction: column;
+    margin: 20px auto;
+}
+.plant-img .badge{
+    display:none ;
+}
+.deal-container{
+    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
+   
+
+}
+.deal-left{
+       grid-template-columns: repeat(1,1fr);
+        width: 100%;
+
+
+}
+.deal-right{
+    width: 100%;
+     padding: auto;
+}
+.footer-container{
+    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
+}
+.footer-logo{
+    max width:350px;
+}
+.join{
+    width: 100%;
+    padding: 20px;
+}
+
+input{
+    padding: 20px;
+   
+
+
 }
