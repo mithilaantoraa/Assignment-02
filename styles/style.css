@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* shared css styles */
 .inter {
   font-family: "Inter", sans-serif;
@@ -171,7 +172,7 @@ body{
     font-size: 1.25rem;
     padding: 20px;
 }
-/*  deal styles*/
+/*  deal section styles*/
 .deal-container{
     display: flex;
     gap: 30px;
@@ -235,7 +236,7 @@ body{
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 1);
 }
-/* join section */
+/* join section styles*/
 .join{
     background-image: url(../assets/news-letter-bg.png);
      background-repeat: no-repeat;
@@ -243,31 +244,24 @@ body{
      padding: 150px 300px;
 
 }
-.join-items{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-.join-input{
-    width: 70%;
-    
-}
-.join-btn{
-        width: 30%;
-        overflow:hidden;
-}
+
 .join-title{
     font-size: 3rem;
     font-weight:500;
     color: rgba(255, 255, 255, 1);
+    padding: 20px;
+}
+.subscribe-form{
+    display: flex;
 }
 input{
-    padding: 19px 450px 20px 20px;
+    padding: 10px 350px 10px 30px;
+    font-size:1rem;
 }
  .sub-btn{
      background: rgba(233, 90, 8, 1);
     color: rgba(255, 255, 255, 1);
-    padding: 19px 80px;
+    padding: 10px 80px;
     font-weight: 500;
     font-size: 1rem;
     border: none;
@@ -277,10 +271,10 @@ input{
 /* footer styles */
 .footer-container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:30px;
+    grid-template-columns: repeat(3,1fr);
+    gap:50px;
     margin: 50px auto;
-    justify-content: space-between;
+    justify-items: space-between;  
 }
 .footer-logo{
      color: rgba(107, 114, 128, 1);
@@ -288,11 +282,22 @@ input{
 
 .footer-logo-text{
     padding: 20px 0px;
+    padding-right: 10px;
+}
+.footer-list{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.footer-list-1,.footer-list-2{
+    padding: 0px 30px;
 }
 .footer-menu-links li{
     list-style: none;
-    padding:15px;
+    padding: 10px 0px;
 }
+
 .footer-menu-links li a{
     text-decoration: none;
     color: rgba(107, 114, 128, 1);
@@ -300,6 +305,7 @@ input{
 .footer-icon a{
     padding:0px 10px;
 }
+
 
 /* animation */
 @keyframes spin {
@@ -317,12 +323,17 @@ input{
   animation-iteration-count: infinite; 
   animation-timing-function: linear; 
 }
+
+
 /* /* responsive media query */
 @media screen and (max-width: 576px) {
 
      .header,.banner,.plant,.flower-card,.deal,.footer{
         margin: 0px 20px;
         
+    }
+    .nav-menu-links{
+        gap:15px;
     }
     .nav-menu-links  .home,.shop,.about-us {
         display:none;
@@ -424,32 +435,36 @@ input{
         flex-direction: column;
         grid-template-columns: repeat(1,1fr);
         align-items:center;
+        gap:0px;
     }
     .footer-logo{
         max width:350px;
     }
     .join{
-        padding: 80px;
+        padding: 50px;
     }
-   .join-items{
-    padding: 5px;
-   }
     .join-title{
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding: 10px;
     }
     input{
-        padding: 8px; 
+        padding: 10px; 
     }
     .sub-btn{
         padding: 10px ;
         font-weight: 300;
         font-size: 0.75rem;
-        width: 40;
-    }
-    .footer-menu-links li{
-    list-style: none;
-    padding:10px;
-   }
-  
+       
+    }  
+.footer-icon a{
+    padding:0px;
+}
+   .footer-list-1,.footer-list-2{
+    padding: 15px 0px;
+}
+  .footer-list{
+    flex-direction: column;
+    gap:0px;
+    padding: 0px;
+  }
 }
