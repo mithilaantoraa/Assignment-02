@@ -298,7 +298,7 @@ input{
 }
 
 .footer-list-1,.footer-list-2{
-    padding: 0px 30px;
+    padding: 0px 50px;
 }
 .footer-menu-links li{
     list-style: none;
@@ -311,6 +311,7 @@ input{
 }
 .footer-icon a{
     padding:0px 10px;
+   
 }
 
 
@@ -474,7 +475,7 @@ input{
         max width:350px;
     }
     .footer-icon a{
-        padding:0px;
+        padding:10px;
     }
     .footer-list-1,.footer-list-2{
         padding: 15px 0px;
